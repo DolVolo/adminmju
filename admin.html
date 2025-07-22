@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบผู้ดูแล - ขายของที่ระลึก 30ปี สาขาวิชาวิทยาการคอมพิวเตอร์</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>ระบบผู้ดูแล - ของที่ระลึก 30ปี</h1>
+            <h2>สาขาวิชาวิทยาการคอมพิวเตอร์</h2>
+        </header>
+
+        <main class="main-content">
+            <div class="admin-panel">
+                <h3>เตรียมสินค้าเพื่อขาย - จัดการ Stock</h3>
+                
+                <!-- เสื้อ Section -->
+                <section class="product-section">
+                    <h4>📱 เสื้อ</h4>
+                    <form class="product-form">
+                        <div class="form-group">
+                            <label for="shirt-color">สี:</label>
+                            <select id="shirt-color" name="shirt-color">
+                                <option value="">เลือกสี</option>
+                                <option value="white">ขาว</option>
+                                <option value="black">ดำ</option>
+                                <option value="navy">กรมท่า</option>
+                                <option value="red">แดง</option>
+                                <option value="blue">น้ำเงิน</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="shirt-size">ขนาด:</label>
+                            <select id="shirt-size" name="shirt-size">
+                                <option value="">เลือกขนาด</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="shirt-image">รูปภาพ:</label>
+                            <input type="file" id="shirt-image" name="shirt-image" accept="image/*">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="shirt-price">ราคา (บาท):</label>
+                            <input type="number" id="shirt-price" name="shirt-price" min="0" step="0.01">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="shirt-stock">จำนวนในสต็อก:</label>
+                            <input type="number" id="shirt-stock" name="shirt-stock" min="0">
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">เพิ่มเสื้อ</button>
+                    </form>
+                </section>
+
+                <!-- กระเป๋า Section -->
+                <section class="product-section">
+                    <h4>👜 กระเป๋า</h4>
+                    <form class="product-form">
+                        <div class="form-group">
+                            <label for="bag-type">ประเภท:</label>
+                            <select id="bag-type" name="bag-type">
+                                <option value="">เลือกประเภท</option>
+                                <option value="tote">กระเป๋าผ้า</option>
+                                <option value="backpack">เป้สะพายหลัง</option>
+                                <option value="laptop">กระเป๋าใส่โน๊ตบุ๊ค</option>
+                                <option value="pouch">กระเป๋าใส่ของจุกจิก</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="bag-color">สี:</label>
+                            <input type="text" id="bag-color" name="bag-color" placeholder="ระบุสี">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="bag-image">รูปภาพ:</label>
+                            <input type="file" id="bag-image" name="bag-image" accept="image/*">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="bag-price">ราคา (บาท):</label>
+                            <input type="number" id="bag-price" name="bag-price" min="0" step="0.01">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="bag-stock">จำนวนในสต็อก:</label>
+                            <input type="number" id="bag-stock" name="bag-stock" min="0">
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">เพิ่มกระเป๋า</button>
+                    </form>
+                </section>
+
+                <!-- แก้ว Section -->
+                <section class="product-section">
+                    <h4>☕ แก้ว</h4>
+                    <form class="product-form">
+                        <div class="form-group">
+                            <label for="cup-type">ประเภท:</label>
+                            <select id="cup-type" name="cup-type">
+                                <option value="">เลือกประเภท</option>
+                                <option value="mug">แก้วกาแฟ</option>
+                                <option value="tumbler">แก้วเก็บความเย็น</option>
+                                <option value="water">แก้วน้ำ</option>
+                                <option value="thermal">แก้วเก็บความร้อน</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cup-material">วัสดุ:</label>
+                            <select id="cup-material" name="cup-material">
+                                <option value="">เลือกวัสดุ</option>
+                                <option value="ceramic">เซรามิค</option>
+                                <option value="glass">แก้ว</option>
+                                <option value="stainless">สแตนเลส</option>
+                                <option value="plastic">พลาสติก</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cup-image">รูปภาพ:</label>
+                            <input type="file" id="cup-image" name="cup-image" accept="image/*">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cup-price">ราคา (บาท):</label>
+                            <input type="number" id="cup-price" name="cup-price" min="0" step="0.01">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cup-stock">จำนวนในสต็อก:</label>
+                            <input type="number" id="cup-stock" name="cup-stock" min="0">
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">เพิ่มแก้ว</button>
+                    </form>
+                </section>
+
+                <!-- อุปกรณ์อื่นๆ Section -->
+                <section class="product-section">
+                    <h4>🎁 อุปกรณ์อื่นๆ</h4>
+                    <form class="product-form">
+                        <div class="form-group">
+                            <label for="other-type">ประเภทสินค้า:</label>
+                            <select id="other-type" name="other-type">
+                                <option value="">เลือกประเภท</option>
+                                <option value="hat">หมวก</option>
+                                <option value="umbrella">ร่ม</option>
+                                <option value="pin">เข็มกลัด</option>
+                                <option value="notebook">สมุด</option>
+                                <option value="pen">ปากกา</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="other-description">รายละเอียด:</label>
+                            <textarea id="other-description" name="other-description" rows="3" placeholder="ระบุรายละเอียดสินค้า"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="other-color">สี/ลาย:</label>
+                            <input type="text" id="other-color" name="other-color" placeholder="ระบุสีหรือลาย">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="other-image">รูปภาพ:</label>
+                            <input type="file" id="other-image" name="other-image" accept="image/*">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="other-price">ราคา (บาท):</label>
+                            <input type="number" id="other-price" name="other-price" min="0" step="0.01">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="other-stock">จำนวนในสต็อก:</label>
+                            <input type="number" id="other-stock" name="other-stock" min="0">
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">เพิ่มสินค้า</button>
+                    </form>
+                </section>
+
+                <!-- สรุปสต็อกสินค้า -->
+                <section class="stock-summary">
+                    <h4>📊 สรุปสต็อกสินค้าทั้งหมด</h4>
+                    <div class="stock-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ประเภทสินค้า</th>
+                                    <th>รายละเอียด</th>
+                                    <th>ราคา</th>
+                                    <th>จำนวนคงเหลือ</th>
+                                    <th>สถานะ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>เสื้อ</td>
+                                    <td>สีขาว ไซส์ M</td>
+                                    <td>350 บาท</td>
+                                    <td>25</td>
+                                    <td><span class="status-available">พร้อมขาย</span></td>
+                                </tr>
+                                <tr>
+                                    <td>กระเป๋า</td>
+                                    <td>กระเป๋าผ้า สีกรมท่า</td>
+                                    <td>250 บาท</td>
+                                    <td>15</td>
+                                    <td><span class="status-available">พร้อมขาย</span></td>
+                                </tr>
+                                <tr>
+                                    <td>แก้ว</td>
+                                    <td>แก้วกาแฟ เซรามิค</td>
+                                    <td>180 บาท</td>
+                                    <td>3</td>
+                                    <td><span class="status-low">สต็อกต่ำ</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 สาขาวิชาวิทยาการคอมพิวเตอร์ - ของที่ระลึก 30ปี</p>
+        </footer>
+    </div>
+</body>
+</html>
